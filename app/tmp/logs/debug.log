@@ -1,0 +1,2 @@
+2011-07-18 17:43:22 Notice: Notice (1024): Please change the value of 'Security.salt' in app/config/core.php to a salt value specific to your application in [/Users/shin/sandbox/cakephp_fizzbuzz/cake/libs/debugger.php, line 684]
+2011-07-18 17:43:22 Notice: Notice (1024): Please change the value of 'Security.cipherSeed' in app/config/core.php to a numeric (digits only) seed value specific to your application in [/Users/shin/sandbox/cakephp_fizzbuzz/cake/libs/debugger.php, line 688]
