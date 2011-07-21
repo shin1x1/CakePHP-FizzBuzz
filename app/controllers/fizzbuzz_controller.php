@@ -1,9 +1,10 @@
 <?php
 class FizzbuzzController extends AppController {
-  public $uses = array();
+  public $uses = array('Fizzbuzz');
 
   public function index() {
     for ($i = 1 ; $i <= 100 ; $i++) {
+      /*
       if ($i % 3 === 0 && $i % 5 === 0) {
         echo 'FizzBuzz<br />';
       } else if ($i % 3 === 0) {
@@ -13,6 +14,8 @@ class FizzbuzzController extends AppController {
       } else {
         echo $i.'<br />';
       }   
+      */
+      echo $this->Fizzbuzz->makeFizzBuzzText($i).'<br />';
     }   
     exit;
   }
