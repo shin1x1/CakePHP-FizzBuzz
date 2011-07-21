@@ -1,34 +1,28 @@
 <?php
-App::import('Fizzbuzz', 'Model');
+App::import('Model', 'Fizzbuzz');
 
 class FizzBuzzTestCase extends CakeTestCase {
-  public $obj = null;
-
-  public function startTest() {
-    $this->obj = ClassRegistry::init('Fizzbuzz');
-  }
-
-  public function endTest() {
-    $this->obj = null;
-  }
-
   public function test_makeFizzBuzzText_1() {
-    $this->assertEqual(1, $this->obj->makeFizzBuzzText(1));
+    $ret = Fizzbuzz::makeFizzBuzzText(1);
+    $this->assertEqual(1, $ret);
   }
 
   public function test_makeFizzBuzzText_2() {
-    $this->assertEqual(2, $this->obj->makeFizzBuzzText(2));
+    $ret = Fizzbuzz::makeFizzBuzzText(2);
+    $this->assertEqual(2, $ret);
   }
 
   public function test_makeFizzBuzzText_3() {
-    $this->assertEqual('Fizz', $this->obj->makeFizzBuzzText(3));
+    $ret = Fizzbuzz::makeFizzBuzzText(3);
+    $this->assertEqual('Fizz', $ret);
   }
 
   public function test_makeFizzBuzzText_5() {
-    $this->assertEqual('Buzz', $this->obj->makeFizzBuzzText(5));
+    $ret = Fizzbuzz::makeFizzBuzzText(5);
+    $this->assertEqual('Buzz', $ret);
   }
 
   public function test_makeFizzBuzzText_15() {
-    $this->assertEqual('FizzBuzz', $this->obj->makeFizzBuzzText(15));
+    $this->assertEqual('FizzBuzz', Fizzbuzz::makeFizzBuzzText(15));
   }
 }

@@ -8,7 +8,7 @@ class Fizzbuzz extends AppModel {
    * @param integer $i
    * @return string
    */
-  public function makeFizzBuzzText($i) {
+  public static function makeFizzBuzzText($i) {
     if ($i % 3 === 0 && $i % 5 === 0) {
       return 'FizzBuzz';
     } else if ($i % 3 === 0) {
